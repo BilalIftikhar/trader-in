@@ -132,7 +132,7 @@ function HeaderBar() {
               className="p-1 rounded-md transition-colors"
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+              {mobileMenuOpen ? <FiX size={24} className="text-black" /> : <FiMenu size={24} />}
             </button>
           </div>
         </div>
@@ -147,7 +147,7 @@ function HeaderBar() {
               <div className="px-6 pb-4 mb-2 border-b border-gray-200 flex justify-between items-center">
                 <span className="font-bold text-gray-800">Menu</span>
                 <button onClick={() => setMobileMenuOpen(false)} className="p-1">
-                  <FiX size={24} />
+                  <FiX size={24} className="text-black"/>
                 </button>
               </div>
               
