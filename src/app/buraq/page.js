@@ -14,26 +14,39 @@ function page() {
           <div className="flex flex-col md:flex-row items-center gap-16">
             {/* Left: Image */}
             <div className="md:w-1/2 relative">
-              <div className="relative w-full h-96 md:h-[550px] rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/buraq.jpg" // Replace with an actual Buraq product image
-                  alt="Buraq uPVC Windows and Doors"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+  {/* Mobile Image */}
+  <div className="block md:hidden w-full h-96 rounded-2xl overflow-hidden shadow-2xl relative">
+    <Image
+      src="/buraq.jpg"
+      alt="Buraq uPVC Windows and Doors"
+      width={600}
+      height={384}
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-              {/* Floating Stats */}
-              <div className="absolute -bottom-10 -right-10 bg-gray-800 p-6 rounded-xl shadow-xl hidden md:block">
-                <p className="text-4xl font-bold text-gray-200">Premium Fit</p>
-                <p className="text-gray-400">Customizable Designs</p>
-              </div>
+  {/* Desktop Image */}
+  <div className="hidden md:block relative w-full h-[550px] rounded-2xl overflow-hidden shadow-2xl">
+    <Image
+      src="/buraq.jpg"
+      alt="Buraq uPVC Windows and Doors"
+      fill
+      className="object-cover"
+    />
+  </div>
 
-              <div className="absolute -top-10 -left-10 bg-black p-6 rounded-xl shadow-xl hidden md:block">
-                <p className="text-4xl font-bold text-white">Reliable</p>
-                <p className="text-gray-300">Pakistani Engineering</p>
-              </div>
-            </div>
+  {/* Floating Stats - Desktop Only */}
+  <div className="absolute -bottom-10 -right-10 bg-gray-800 p-6 rounded-xl shadow-xl hidden md:block">
+    <p className="text-4xl font-bold text-gray-200">Premium Fit</p>
+    <p className="text-gray-400">Customizable Designs</p>
+  </div>
+
+  <div className="absolute -top-10 -left-10 bg-black p-6 rounded-xl shadow-xl hidden md:block">
+    <p className="text-4xl font-bold text-white">Reliable</p>
+    <p className="text-gray-300">Pakistani Engineering</p>
+  </div>
+</div>
+
 
             {/* Right: Text Content */}
             <div className="md:w-1/2 mt-16 md:mt-0">

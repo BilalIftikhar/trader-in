@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import HeaderBar from "../../components/HeaderBar";
 import Footer from "../../components/Footer";
-import Image from 'next/image';
+import Image from "next/image";
 
 function page() {
   return (
@@ -14,16 +14,28 @@ function page() {
           <div className="flex flex-col md:flex-row items-center gap-16">
             {/* Left: Image */}
             <div className="md:w-1/2 relative">
-              <div className="relative w-full h-96 md:h-[550px] rounded-2xl overflow-hidden shadow-2xl">
+              {/* Mobile Image */}
+              <div className="block md:hidden w-full h-96 rounded-2xl overflow-hidden shadow-2xl relative">
                 <Image
-                  src="/pamp.jpeg" // Replace with actual image of PAM-P window/door
+                  src="/pamp.jpeg"
+                  alt="PAM-P Windows and Doors"
+                  width={600}
+                  height={384}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Desktop Image */}
+              <div className="hidden md:block relative w-full h-[550px] rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/pamp.jpeg"
                   alt="PAM-P Windows and Doors"
                   fill
                   className="object-cover"
                 />
               </div>
 
-              {/* Floating Stats */}
+              {/* Floating Stats - Desktop Only */}
               <div className="absolute -bottom-10 -right-10 bg-gray-800 p-6 rounded-xl shadow-xl hidden md:block">
                 <p className="text-4xl font-bold text-gray-200">100% uPVC</p>
                 <p className="text-gray-400">Weather Resistant</p>
@@ -48,36 +60,68 @@ function page() {
               <div className="w-24 h-1.5 bg-gray-500 rounded-full mb-8"></div>
 
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                PAM-P is a trusted Pakistani brand offering durable and economical uPVC solutions tailored for local climate conditions. These systems are designed to withstand heat, humidity, and dust — ensuring lasting performance with low maintenance.
+                PAM-P is a trusted Pakistani brand offering durable and
+                economical uPVC solutions tailored for local climate conditions.
+                These systems are designed to withstand heat, humidity, and dust
+                — ensuring lasting performance with low maintenance.
               </p>
 
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                Ideal for both urban and rural projects, PAM-P windows and doors provide reliable insulation, noise reduction, and security — all while remaining affordable for every household.
+                Ideal for both urban and rural projects, PAM-P windows and doors
+                provide reliable insulation, noise reduction, and security — all
+                while remaining affordable for every household.
               </p>
 
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Choose PAM-P for dependable, locally manufactured solutions backed by years of experience in the uPVC industry.
+                Choose PAM-P for dependable, locally manufactured solutions
+                backed by years of experience in the uPVC industry.
               </p>
 
               {/* Features Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 {[
-                  { title: "Climate Resistant", desc: "Performs in extreme heat, rain, and dust" },
-                  { title: "Affordable", desc: "Budget-friendly without compromising quality" },
-                  { title: "Sound Insulation", desc: "Reduces outdoor noise effectively" },
-                  { title: "Low Maintenance", desc: "Does not rust, warp, or rot" },
-                  { title: "Made in Pakistan", desc: "Locally manufactured for local needs" },
+                  {
+                    title: "Climate Resistant",
+                    desc: "Performs in extreme heat, rain, and dust",
+                  },
+                  {
+                    title: "Affordable",
+                    desc: "Budget-friendly without compromising quality",
+                  },
+                  {
+                    title: "Sound Insulation",
+                    desc: "Reduces outdoor noise effectively",
+                  },
+                  {
+                    title: "Low Maintenance",
+                    desc: "Does not rust, warp, or rot",
+                  },
+                  {
+                    title: "Made in Pakistan",
+                    desc: "Locally manufactured for local needs",
+                  },
                 ].map((feature, i) => (
                   <div key={i} className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-1">
                       <div className="w-6 h-6 rounded-full bg-gray-700 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 text-gray-300"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       </div>
                     </div>
                     <div>
-                      <p className="font-semibold text-white">{feature.title}</p>
+                      <p className="font-semibold text-white">
+                        {feature.title}
+                      </p>
                       <p className="text-gray-400">{feature.desc}</p>
                     </div>
                   </div>
@@ -87,8 +131,17 @@ function page() {
               {/* CTA Button */}
               <button className="mt-6 inline-flex items-center px-8 py-4 bg-gray-800 hover:bg-gray-700 transition-colors rounded-lg text-white font-medium shadow-lg">
                 Learn More About PAM-P
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </button>
             </div>
@@ -99,26 +152,56 @@ function page() {
       {/* Testimonial Section */}
       <section className="w-full py-20 bg-black text-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold mb-12">Trusted by Builders Across Pakistan</h3>
+          <h3 className="text-3xl font-bold mb-12">
+            Trusted by Builders Across Pakistan
+          </h3>
 
           <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
             <div className="bg-gray-900 rounded-xl p-8 shadow-lg">
               <div className="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-12 w-12 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  />
                 </svg>
               </div>
-              <p className="italic mb-6">"For our housing projects in Lahore, PAM-P has consistently delivered top value. Great insulation, zero complaints."</p>
+              <p className="italic mb-6">
+                "For our housing projects in Lahore, PAM-P has consistently
+                delivered top value. Great insulation, zero complaints."
+              </p>
               <p className="font-semibold">- Fahad Rehman, Developer</p>
             </div>
 
             <div className="bg-gray-900 rounded-xl p-8 shadow-lg">
               <div className="flex justify-center mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-12 w-12 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  />
                 </svg>
               </div>
-              <p className="italic mb-6">"PAM-P's quality and pricing make them our go-to supplier for mid-size housing schemes."</p>
+              <p className="italic mb-6">
+                "PAM-P's quality and pricing make them our go-to supplier for
+                mid-size housing schemes."
+              </p>
               <p className="font-semibold">- Sana Malik, Architect</p>
             </div>
           </div>
@@ -127,7 +210,7 @@ function page() {
 
       <Footer />
     </>
-  )
+  );
 }
 
 export default page;
