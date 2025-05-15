@@ -9,9 +9,10 @@ export default function ContactSection() {
       </div>
       <h2
         className="font-bold text-4xl md:text-5xl text-gray-800 mb-10 text-center"
-        style={{ fontFamily: 'Orbitron, Geist, sans-serif' }}
+        style={{ fontFamily: "Orbitron, Geist, sans-serif" }}
       >
-        Do You Have Any Questions?<br />
+        Do You Have Any Questions?
+        <br />
         We&apos;ll Be Happy To Assist!
       </h2>
 
@@ -27,17 +28,32 @@ export default function ContactSection() {
           />
           <div className="absolute bottom-6 left-6 bg-white/90 rounded-md shadow px-7 py-5 w-[88%] max-w-[350px] border border-gray-100">
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-2xl text-gray-700"><FiMail /></span>
+              <span className="text-2xl text-gray-700">
+                <FiMail />
+              </span>
               <div>
                 <div className="font-semibold text-sm text-gray-900">Email</div>
-                <div className="font-bold text-sm text-black">sajid@tradeinupvc.com</div>
+                <div className="font-bold text-sm text-black">
+                  sajid@tradeinupvc.com
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <span className="text-2xl text-gray-700"><FiPhone /></span>
+              <span className="text-2xl text-gray-700">
+                <FiPhone />
+              </span>
               <div>
-                <div className="font-semibold text-sm text-gray-900">Call Us</div>
-                <div className="font-bold text-md text-black">+92 300 9353298</div>
+                <div className="font-semibold text-sm text-gray-900">
+                  Call Us
+                </div>
+                <div className="font-bold text-md text-black">
+                  <a
+                    href="tel:+923009353298"
+                    className="flex items-center gap-2 text-inherit hover:underline"
+                  >
+                     +92 347 7163038
+                  </a>
+                </div>
               </div>
             </div>
           </div>
