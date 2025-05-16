@@ -39,6 +39,12 @@ export default function Contact() {
                 >
                   <FiPhone /> +92 347 7163038
                 </a>
+                <a
+                  href="tel:+923009353298"
+                  className="flex items-center gap-2 text-inherit hover:underline"
+                >
+                  <FiPhone /> +92 300 9353298
+                </a>
               </p>
             </div>
 
