@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Trade In",
   description: "",
+  icons: {
+    icon: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({ children }) {

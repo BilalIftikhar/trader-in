@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function TeamSection() {
   return (
-    <section className="relative  mx-30 my-30 py-10  bg-zinc-800 text-white">
+    <section className="relative md:mx-30 my-30 py-10 bg-zinc-800 text-white">
       {/* Background overlay with dark opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
