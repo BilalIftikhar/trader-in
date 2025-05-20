@@ -275,10 +275,10 @@ export default function Header() {
               home and office that are sure to add grace to your space.
             </p>
             <a
-              href="/contact"
+              href="/services"
               className="inline-flex items-center gap-4 bg-[#dadada] text-[#2b2b2b] font-semibold py-3 px-6 sm:px-8 rounded-sm hover:bg-gray-300 transition shadow text-base"
             >
-              Contact us{" "}
+              Our Services{" "}
               <span className="inline-block">
                 <svg
                   width="18"

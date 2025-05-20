@@ -8,6 +8,8 @@ import Home1 from "../components/Home1";
 import TeamSection from "../components/TeamSection";
 import ContactSection from "../components/ContactSection";
 import WindowShowcase from "../components/WindowShowcase";
+import WhyUseUPVC from "../components/WhyUseUPVC";
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -20,6 +22,44 @@ export default function Home() {
       </Head>
       <Header />
       <Home1 />
+      
+      <section className="w-full flex flex-col items-center py-12 bg-white">
+        <h2
+          className="font-bold text-4xl md:text-5xl text-gray-800 mb-8 text-center"
+          style={{ fontFamily: "Orbitron, Geist, sans-serif" }}
+        >
+          Trusted Brands We Work With
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 max-w-6xl w-full px-4 md:px-0">
+          {[
+            "/brands/A4.jpeg",
+            "/brands/A9.jpeg",
+            "/brands/A1.jpeg",
+            "/brands/A3.jpeg",
+            "/brands/A5.jpeg",
+            "/brands/A8.jpeg",
+            "/brands/A7.jpeg",
+            "/brands/A6.jpeg",
+            "/brands/A2.jpeg",
+            "/brands/A10.jpeg",
+          ].map((src, idx) => (
+            <div
+              key={src}
+              className="overflow-hidden rounded-xl shadow border bg-gray-100"
+            >
+              <Image
+                src={src}
+                alt={`Project ${idx + 1}`}
+                width={500}
+                height={350}
+                className="w-full h-[230px] object-cover transition-transform duration-300 hover:scale-105"
+                priority={idx < 3}
+              />
+            </div>
+          ))}
+        </div>
+
+      </section>
       <TeamSection />
 
       <section className="w-full flex flex-col items-center py-12 bg-white">
@@ -59,6 +99,7 @@ export default function Home() {
         
       </section>
       <WindowShowcase />
+      <WhyUseUPVC />
       <ContactSection />
       <Footer />
     </div>
