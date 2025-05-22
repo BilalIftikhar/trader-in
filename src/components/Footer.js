@@ -57,14 +57,7 @@ export default function Footer() {
                 Gajjumatah Lahore.
               </span>
             </li>
-            <li className="flex items-center gap-2">
-              <a
-                href="tel:+923009353298"
-                className="flex items-center gap-2 text-inherit hover:underline"
-              >
-                <FiPhone /> +92 347 7163038
-              </a>
-            </li>
+            
             <li className="flex items-center gap-2">
               <a
                 href="tel:+923009353298"
@@ -73,6 +66,15 @@ export default function Footer() {
                 <FiPhone /> +92 300 9353298
               </a>
             </li>
+            <li className="flex items-center gap-2">
+              <a
+                href="tel:+923477163038"
+                className="flex items-center gap-2 text-inherit hover:underline"
+              >
+                <FiPhone /> +92 347 7163038
+              </a>
+            </li>
+
 
             <li className="flex items-center gap-2">
               <FiMail /> sajid@tradeinupvc.com

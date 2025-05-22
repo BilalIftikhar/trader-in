@@ -33,17 +33,18 @@ export default function Contact() {
               <h3 className="font-semibold text-lg mb-1">Our Phone</h3>
               <p className="text-gray-600">Mobile number :</p>
               <p className="font-semibold text-gray-800 mt-1">
-                <a
-                  href="tel:+923009353298"
-                  className="flex items-center gap-2 text-inherit hover:underline"
-                >
-                  <FiPhone /> +92 347 7163038
-                </a>
+               
                 <a
                   href="tel:+923009353298"
                   className="flex items-center gap-2 text-inherit hover:underline"
                 >
                   <FiPhone /> +92 300 9353298
+                </a>
+                <a
+                  href="tel:+923477163038"
+                  className="flex items-center gap-2 text-inherit hover:underline"
+                >
+                  <FiPhone /> +92 347 7163038
                 </a>
               </p>
             </div>

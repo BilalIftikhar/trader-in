@@ -47,18 +47,19 @@ export default function ContactSection() {
                   Call Us
                 </div>
                 <div className="font-bold text-md text-black">
-                  <a
-                    href="tel:+923009353298"
-                    className="flex items-center gap-2 text-inherit hover:underline"
-                  >
-                     +92 347 7163038
-                  </a>
-                  <a
+                <a
                     href="tel:+923009353298"
                     className="flex items-center gap-2 text-inherit hover:underline"
                   >
                      +92 300 9353298
                   </a>
+                  <a
+                    href="tel:+923477163038"
+                    className="flex items-center gap-2 text-inherit hover:underline"
+                  >
+                     +92 347 7163038
+                  </a>
+                 
                 </div>
               </div>
             </div>
