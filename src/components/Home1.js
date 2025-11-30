@@ -21,44 +21,31 @@ export default function Home1() {
         </div>
 
         <div className="w-full md:w-1/2 p-4">
-          <h1 className="text-4xl font-bold text-black mb-4">Trade In</h1>
+          <h1 className="text-4xl font-bold text-black mb-4">
+            Win Craft UPVC
+          </h1>
 
           <p className="mb-4">
-            Welcome to Trade In, WC is becoming a source for innovative, state
-            of the art and high-end solution for the building industry in
-            Pakistan. Windows are expected to meet high technical performance.
-            We are the fabricators ofuPVCwindows and doors meeting international
-            quality standards, and use specially designed profiles for local
-            climate that are duly tested and certified. Our past 13+ years
-            presence in industry has empowered us to gain crucial experience and
-            knowledge of the diversity in Pakistani climatic conditions. The
-            primegoal of WC is to innovate and create quality solutions that
-            enhances the new-era architecture,WC offers wide range of
-            custom-made uPVC windows and doors. Our trained team ensures an
-            excellent finish and timely execution of projects. WC believes in
-            long term relationship with itsclients and strives to offer quality
-            solutions that satisfies the aesthetic and performance needs.
+            Welcome to Win Craft UPVC, the Lahore-based team that delivers
+            precision-engineered windows and doors for high-end residential and
+            commercial projects. Led by CEO Sajid Ali, we fabricate with
+            certified German hardware, tailor every system for Pakistan&apos;s
+            diverse climate, and obsess over clean sight lines that elevate
+            modern architecture.
           </p>
 
           <h2 className="text-3xl font-bold text-black mb-4">
-            Upgrade Your Space with Trade In Products in Pakistan
+            Upgrade Your Space with Win Craft UPVC Products
           </h2>
 
           <p className="mb-4">
-            When it comes to choosing windows & doors for your home or office in
-            Pakistan, Trade In products should be at the top of your
-            list. Not only do we offer a wide range of options, including UPVC
-            windows and aluminium windows, but Trade In products also
-            provide durability,{" "}
-            <span className="font-bold">energy efficiency</span>, and aesthetic
-            appeal. In addition, we have an extensive range of high-quality
-            windows & doors, ensuring that you'll discover the optimal match for
-            your space. UPVC windows in Pakistan are especially known for their
-            excellent insulation properties, helping to keep your space cool in
-            the hot summer months while staying warm during chilly winters.
-            Therefore, we encourage you to get in contact with us at your
-            earliest convenience to gain further insights into our products and
-            services.
+            Whether you&apos;re planning a luxury home or a retail facade, Win
+            Craft UPVC provides durable,{" "}
+            <span className="font-bold">energy-efficient</span> profiles,
+            precision glazing, and bespoke aluminum solutions. Our insulated
+            systems keep interiors comfortable through Lahore&apos;s intense
+            summers and crisp winters, while our project team guides you from
+            survey to installation for a flawless finish.
           </p>
 
           <div className="grid grid-cols-2 gap-4 mt-8">

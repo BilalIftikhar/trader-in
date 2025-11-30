@@ -53,20 +53,20 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2">
             <div className="relative z-10 rounded-md shadow-lg">
               <Image
-                src="/logo.jpeg"
-                alt="logo"
+                src="/upvc.png"
+                alt="Win Craft UPVC logo"
                 width={60}
                 height={60}
-                className="object-cover rounded-md bg-white"
+                className="object-cover rounded-md bg-black"
                 priority
               />
             </div>
             <div className="flex flex-col text-sm leading-5">
               <span className="font-bold text-[#212121] tracking-wider">
-                TRADE IN
+                WIN CRAFT UPVC
               </span>
               <span className="text-[11px] text-[#313131] -mt-0.5">
-                ALUMINIUM • UPVC • GLASS
+                DOORS • WINDOWS • GLASS
               </span>
             </div>
           </Link>
@@ -259,7 +259,7 @@ export default function Header() {
           {/* Left content */}
           <div className="flex-1 max-w-xl text-white text-center md:text-left">
             <div className="mb-2 tracking-widest text-xs text-gray-300 font-bold uppercase">
-              Trade In
+              Win Craft UPVC
             </div>
             <h1
               className="font-bold text-4xl sm:text-5xl md:text-6xl leading-tight mb-4"
@@ -271,8 +271,9 @@ export default function Header() {
             </h1>
             <div className="w-3/4 h-0.5 bg-gray-400 mb-6 mx-auto md:mx-0"></div>
             <p className="mb-8 text-base sm:text-lg text-gray-200">
-              Trade In offers a vast range of windows & doors designs for the
-              home and office that are sure to add grace to your space.
+              Win Craft UPVC delivers precision-built windows & doors that merge
+              German-engineered hardware with tailored local fabrication for
+              elegant homes and commercial spaces across Lahore.
             </p>
             <a
               href="/services"

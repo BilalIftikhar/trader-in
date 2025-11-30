@@ -54,20 +54,20 @@ function HeaderBar() {
           <Link href="/" className="flex items-center gap-2">
             <div className="relative z-10 rounded-md  shadow-lg">
               <Image
-                src="/logo.jpeg"
-                alt="logo"
+                src="/upvc.png"
+                alt="Win Craft UPVC logo"
                 width={60}
                 height={60}
-                className="object-cover rounded-md bg-white"
+                className="object-cover rounded-md bg-black"
                 priority
               />
             </div>
             <div className="flex flex-col text-sm leading-5">
               <span className="font-bold text-[#212121] tracking-wider">
-                TRADE IN
+                WIN CRAFT UPVC
               </span>
               <span className="text-[11px] text-[#313131] -mt-0.5">
-                ALUMINIUM • UPVC • GLASS
+                DOORS • WINDOWS • GLASS
               </span>
             </div>
           </Link>

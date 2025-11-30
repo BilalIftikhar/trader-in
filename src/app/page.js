@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Trade In - Aluminum, UPVC & Glass</title>
+        <title>Win Craft UPVC | Doors & Windows</title>
         <meta
           name="description"
-          content="Trade In offers a vast range of windows & doors designs for the home and office that are sure to add grace to your space."
+          content="Win Craft UPVC crafts premium uPVC doors and windows for modern homes and commercial projects across Lahore."
         />
       </Head>
       <Header />

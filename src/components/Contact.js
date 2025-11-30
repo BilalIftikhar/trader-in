@@ -18,10 +18,11 @@ export default function Contact() {
               </div>
               <h3 className="font-semibold text-lg mb-1">Our Address</h3>
               <p className="text-gray-600">
-                21 km Green Cap <br />
-                Housing Society Near Ibrahim Mosque
+                2.5 km from Gajjumata Ferozpur Road
                 <br />
-                Gajjumatah Lahore.
+                Near Shafi Life Style (Pvt) Ltd.
+                <br />
+                Lahore, Pakistan.
               </p>
             </div>
 
@@ -41,10 +42,10 @@ export default function Contact() {
                   <FiPhone /> +92 300 9353298
                 </a>
                 <a
-                  href="tel:+923477163038"
+                  href="tel:+923005266296"
                   className="flex items-center gap-2 text-inherit hover:underline"
                 >
-                  <FiPhone /> +92 347 7163038
+                  <FiPhone /> +92 300 5266296
                 </a>
               </p>
             </div>
@@ -57,7 +58,7 @@ export default function Contact() {
               <h3 className="font-semibold text-lg mb-1">Our Email</h3>
               <p className="text-gray-600">Email:</p>
               <p className="font-medium text-indigo-700 mt-1">
-                sajid@tradeinupvc.com
+                wincraftupvcwindows@gmail.com
               </p>
             </div>
           </div>

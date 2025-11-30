@@ -9,16 +9,17 @@ export default function Footer() {
         {/* Logo & About */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <Image
-            src="/logo.jpeg"
-            alt="Trade In Logo"
+            src="/upvc.png"
+            alt="Win Craft UPVC logo"
             width={120}
             height={70}
             className="mb-4"
             priority
           />
           <p className="text-gray-300 text-sm leading-relaxed">
-            Trade In offers a wide range of windows & doors designs for both
-            home and office — adding elegance and efficiency to your space.
+            Win Craft UPVC designs and fabricates bespoke windows & doors for
+            homes and commercial projects, pairing precision German hardware
+            with expert local installation.
           </p>
         </div>
 
@@ -51,10 +52,11 @@ export default function Footer() {
             <li className="flex items-start gap-2">
               <FiMapPin className="mt-1 text-lg" />
               <span>
-                21 km Green Cap <br />
-                Housing Society Near Ibrahim Mosque
+                2.5 km from Gajjumata Ferozpur Road
                 <br />
-                Gajjumatah Lahore.
+                Near Shafi Life Style (Pvt) Ltd.
+                <br />
+                Lahore, Pakistan.
               </span>
             </li>
             
@@ -68,16 +70,16 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <a
-                href="tel:+923477163038"
+                href="tel:+923005266296"
                 className="flex items-center gap-2 text-inherit hover:underline"
               >
-                <FiPhone /> +92 347 7163038
+                <FiPhone /> +92 300 5266296
               </a>
             </li>
 
 
             <li className="flex items-center gap-2">
-              <FiMail /> sajid@tradeinupvc.com
+              <FiMail /> wincraftupvcwindows@gmail.com
             </li>
           </ul>
         </div>

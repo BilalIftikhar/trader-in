@@ -11,16 +11,17 @@ function page() {
           {/* Left: Text Content */}
           <div className="md:w-1/2">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Welcome To Trade In: Your Destination for Modern Windows and Doors
+              Welcome To Win Craft UPVC: Your Destination for Modern Windows and
+              Doors
             </h1>
             <div className="w-16 h-1 bg-gray-300 mb-6"></div>
             <p className="text-gray-700 text-base mb-6 leading-relaxed">
-              At Trade In, we take pride in offering a premium selection of
-              modern windows and doors that seamlessly blend style with
+              At Win Craft UPVC, we take pride in offering a premium selection
+              of modern windows and doors that seamlessly blend style with
               durability. Designed to meet the highest standards of quality and
               performance, our products not only enhance the aesthetic appeal of
               your space but also ensure long-lasting functionality. With a
-              strong commitment to excellence and innovation, we've built a
+              strong commitment to excellence and innovation, we&apos;ve built a
               reputation as a trusted provider of stylish and reliable window
               and door solutions.
             </p>
@@ -32,8 +33,8 @@ function page() {
               every style and preference. Whether you prefer sleek, minimalist
               aesthetics or bold, contemporary statements, we offer solutions
               that complement any home. From expansive panoramic windows that
-              welcome natural light to secure, stylish door systems, Trade In
-              delivers the ideal fit for every architectural and interior design
+              welcome natural light to secure, stylish door systems, Win Craft
+              UPVC delivers the ideal fit for every architectural and interior design
               vision.
             </p>
           </div>

@@ -12,10 +12,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Trade In",
-  description: "",
+  title: "Win Craft UPVC | Doors & Windows",
+  description:
+    "Win Craft UPVC designs and installs premium uPVC windows and doors across Lahore with German hardware and expert fabrication.",
   icons: {
-    icon: "/logo.jpeg",
+    icon: "/upvc.png",
   },
 };
 

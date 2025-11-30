@@ -34,7 +34,7 @@ export default function ContactSection() {
               <div>
                 <div className="font-semibold text-sm text-gray-900">Email</div>
                 <div className="font-bold text-sm text-black">
-                  sajid@tradeinupvc.com
+                  wincraftupvcwindows@gmail.com
                 </div>
               </div>
             </div>
@@ -54,10 +54,10 @@ export default function ContactSection() {
                      +92 300 9353298
                   </a>
                   <a
-                    href="tel:+923477163038"
+                    href="tel:+923005266296"
                     className="flex items-center gap-2 text-inherit hover:underline"
                   >
-                     +92 347 7163038
+                     +92 300 5266296
                   </a>
                  
                 </div>
